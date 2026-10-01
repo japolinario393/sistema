@@ -7,6 +7,8 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class ConteudoController extends BaseController
 {
+    // Em app/Controllers/BaseController.php (ou dentro do seu Controller específico)
+    protected $helpers = ['url'];
     public function index(): string
     {
         $conteudoModel = new ConteudoModel();

@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <h1><?= $conteudo['Titulo']; ?></h1>  
-     <p><?= $conteudo['Texto']; ?></p> 
-    <h1>pagina de contato</h1>
-</body>
-</html>
+<?= $this->extend('layout/main') ?>
+<?= $this->section('conteudo') ?>
+<h1><?= $conteudo['Titulo']; ?></h1>
+<p><?= $conteudo['Texto']; ?></p>
+<?= $this->endSection() ?>
